@@ -1,0 +1,5 @@
+profile: service
+defaultPackage: micronaut.gorm.postgresql.example
+---
+testFramework: spock
+sourceLanguage: groovy
