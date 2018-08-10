@@ -54,3 +54,7 @@ shadowJar {
 run.jvmArgs('-noverify', '-XX:TieredStopAtLevel=1')
 
 mainClassName = "micronaut.gorm.postgresql.example.Application"
+
+// Heroku build
+task stage(dependsOn: ['clean', 'shadowJar'])
+shadowJar.mustRunAfter clean
